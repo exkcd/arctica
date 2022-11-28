@@ -1,6 +1,7 @@
 /** 
 * Table of contents
 *
+* Global resets
 * Basic formatting
 * Headings
 * Body text
@@ -26,17 +27,36 @@
   --code-color: var(--body-color);
   --code-bg: #eceff4;
   --hr-color: #d8dee9;
-  --link-color: #8fbcbb;
-  --link-color-hover: rgba(136, 192, 208, 0.25);
+  --link-color: #81a1c1;
+  --link-color-hover: rgba(129, 161, 193, .25);
   --blockquote-border: #5e81ac;
   --blockquote-color: rgba(94, 129, 172, .75);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: #2e3440;
+    --body-color: #d8dee9;
+    --secondary-color: #e5e9f0;
+    --heading-color: #eceff4;
+    --code-color: var(--body-color);
+    --code-bg: #4c566a;
+    --hr-color: #3b4252;
+    --link-color: #88c0d0;
+    --link-color-hover: rgba(136, 192, 208, .25);
+    --blockquote-border: #8fbcbb;
+    --blockquote-color: rgba(143, 188, 187, .75);
+  }
+}
+
+
 /** Global resets */
+
 html, body {
   margin: 0;
   padding: 0;
 }
+
 
 /** Basic formatting */
 
@@ -53,12 +73,13 @@ body {
   background-color: var(--body-bg);
 }
 
+
 /** Headings */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--sans-font);
   font-weight: normal;
-  color: #3b4252;
+  color: var(--heading-color);
   margin-bottom: .5rem;
 }
 
@@ -80,6 +101,7 @@ h4, h5, h6 {
 
 
 /** Body text */
+
 p {
   position: relative;
   margin-top: 0;
@@ -112,6 +134,7 @@ blockquote {
   border-left: solid var(--blockquote-border);
 }
 
+
 /** Lists */
 
 ul, ol {
@@ -125,13 +148,18 @@ dt {
 dd {
   margin-bottom: .5rem;
 }
+
+
 /** Container  */
+
 .container {
   max-width: 42rem;
   margin: 0 auto;
 }
 
+
 /** Archive */
+
 .archive {
   font-family: var(--sans-font);
   margin-bottom: 3rem;
@@ -157,7 +185,9 @@ dd {
   }
 }
 
+
 /** Posts */
+
 .post {
   position: relative;
   margin-bottom: 4rem;
@@ -170,7 +200,9 @@ dd {
   color: var(---color);
 }
 
+
 /** Masthead */
+
 .masthead {
   display: flex;
   flex-wrap: wrap;
@@ -194,7 +226,9 @@ dd {
   background-color: var(--body-bg);
 }
 
-/** Syntax highliting */
+
+/** Syntax highlighting */
+
 code, pre {
   font-family: var(--code-font);
 }
