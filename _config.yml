@@ -1,0 +1,19 @@
+title: Arctica
+baseurl: "/arctica"
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+
+kramdown:
+  input: GFM
+  syntax_highligher: rouge
+
+nav:
+  - title: About
+    url: about
