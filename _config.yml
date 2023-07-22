@@ -1,6 +1,6 @@
 title: Arctica
 baseurl: ""
-url: https://exkcd.github.io/arctica
+url: exkcd.github.io/arctica
 
 permalink: pretty
 plugins:
