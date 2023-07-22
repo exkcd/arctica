@@ -1,5 +1,7 @@
 title: Arctica
 baseurl: ""
+url: ""
+
 permalink: pretty
 plugins:
   - jekyll-seo-tag
