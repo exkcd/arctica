@@ -1,6 +1,6 @@
 title: Arctica
 baseurl: ""
-url: exkcd.github.io/arctica
+url: https://exkcd.github.io/arctica
 
 permalink: pretty
 plugins:
@@ -11,10 +11,6 @@ exclude:
   - .jekyll-cache
   - Gemfile
   - Gemfile.lock
-
-kramdown:
-  input: GFM
-  syntax_highligher: rouge
 
 nav:
   - title: About
